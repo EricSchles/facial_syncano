@@ -1,0 +1,3 @@
+import cv2
+img = cv2.imread("opencv_log.png",0)
+cv2.imwrite("opencv_grey.png",img)

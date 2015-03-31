@@ -1,0 +1,6 @@
+import cv2
+from glob import glob
+imgs = glob("*.jpg")
+image = cv2.imread("opencv_logo.png")
+resized_image = cv2.resize(image, (100, 50)) 
+cv2.imwrite("smaller_logo.png",resized_image)
